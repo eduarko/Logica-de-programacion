@@ -17,11 +17,11 @@ Y la inserción se verá así:
  "ayar"
  "rayar"
  """
-def palindromo(texto):
+def invertir(texto):
     resultado = ""
     texto_normalizado = texto.lower()
     for letra in texto_normalizado:
-        resultado = resultado + letra
+        resultado = letra + resultado
     return resultado
 
-print(palindromo("reconocer"))
+print(invertir("paraguas"))
