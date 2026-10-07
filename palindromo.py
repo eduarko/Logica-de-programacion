@@ -5,3 +5,23 @@ def es_palindromo(texto):
     return texto_limpio == palindromo
 
 print(es_palindromo("osO"))
+
+"""Una forma de inventir el texto de forma mas lógica es utilizando una cadena vacía , ya que al concatenar las letras estas se irán
+agregando a la cadena en el orden que han sido leídas, por ejemplo si analizamos la palabra rayar , el texto será leido de la siguiente forma
+r a y a r
+Y la inserción se verá así:
+ ""
+ "r"
+ "ar"
+ "yar"
+ "ayar"
+ "rayar"
+ """
+def palindromo(texto):
+    resultado = ""
+    texto_normalizado = texto.lower()
+    for letra in texto_normalizado:
+        resultado = resultado + letra
+    return resultado
+
+print(palindromo("reconocer"))
