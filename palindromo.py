@@ -19,8 +19,7 @@ Y la inserción se verá así:
  """
 def invertir(texto):
     resultado = ""
-    texto_normalizado = texto.lower()
-    for letra in texto_normalizado:
+    for letra in texto:
         resultado = letra + resultado
     return resultado
 
